@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_tUDSAJoKEfCoXdUwRfdjhw" name="profile" metaclassReference="_xMRrUJoLEfCoXdUwRfdjhw">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NVy6wJoMEfCoXdUwRfdjhw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_NV0I4JoMEfCoXdUwRfdjhw" name="profile" nsURI="http:///schemas/profile/_NVxsoJoMEfCoXdUwRfdjhw/0" nsPrefix="profile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NV0v8JoMEfCoXdUwRfdjhw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NV0v8ZoMEfCoXdUwRfdjhw" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NV0v8poMEfCoXdUwRfdjhw" key="Comment" value="A sterotype for public access "/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NV0v85oMEfCoXdUwRfdjhw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NV0v9JoMEfCoXdUwRfdjhw" key="Date" value="2025-09-25"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NV0v9ZoMEfCoXdUwRfdjhw" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_NV0I4ZoMEfCoXdUwRfdjhw" name="publicAccess">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NV0I4poMEfCoXdUwRfdjhw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_yXHjQJoKEfCoXdUwRfdjhw"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_NV0I45oMEfCoXdUwRfdjhw" name="nameURL" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_NV0I5ZoMEfCoXdUwRfdjhw" name="iPaddress" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_NV0I55oMEfCoXdUwRfdjhw" name="base_Device" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Device"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_xMRrUJoLEfCoXdUwRfdjhw" alias="Device">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Device"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_tYshcJoKEfCoXdUwRfdjhw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_tYtIgJoKEfCoXdUwRfdjhw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_yXHjQJoKEfCoXdUwRfdjhw" name="publicAccess">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1WrEoJoKEfCoXdUwRfdjhw" name="nameURL">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ICr30JoLEfCoXdUwRfdjhw" name="iPaddress">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_z-MZUJoLEfCoXdUwRfdjhw" name="base_Device" association="_z-J9EJoLEfCoXdUwRfdjhw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Device"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z-MZUZoLEfCoXdUwRfdjhw"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_z-J9EJoLEfCoXdUwRfdjhw" name="E_publicAccess_Device1" memberEnd="_z-LyQJoLEfCoXdUwRfdjhw _z-MZUJoLEfCoXdUwRfdjhw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_z-LyQJoLEfCoXdUwRfdjhw" name="extension_publicAccess" type="_yXHjQJoKEfCoXdUwRfdjhw" aggregation="composite" association="_z-J9EJoLEfCoXdUwRfdjhw"/>
+  </packagedElement>
+</uml:Profile>

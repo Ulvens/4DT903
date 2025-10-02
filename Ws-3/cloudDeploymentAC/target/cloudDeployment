@@ -1,0 +1,15 @@
+- resource create "databas"
+	- install ubunto
+	- install mongoDB
+	- setup Artifact from https://github.com/Ulvens/4DT903
+- resource create "myserver"
+	- install ubunto
+	- install tomcat
+	- install java
+	- setup webapp from https://github.com/Ulvens
+- DNS update:
+	- servername: www.lnu.se
+	- ip: 194.47.1.45
+			
+
+
